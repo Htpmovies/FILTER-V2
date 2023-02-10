@@ -379,12 +379,12 @@ def humanbytes(size):
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'B'
 
 async def get_shortlink(link):
-    https = clicksfly.com("edb283b5112a4f2931a50e85e0f15159b8dddedb")[edb283b5112a4f2931a50e85e0f15159b8dddedb]
+    https = clicksfly.com(":")[0]
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
     url = f'https://clicksfly.com/api'
-    params = {'api': SHORTENER_API,'edb283b5112a4f2931a50e85e0f15159b8dddedb'
+    params = {'api': SHORTENER_API,
               'url': link,
               }
 
